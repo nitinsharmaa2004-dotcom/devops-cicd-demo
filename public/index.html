@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DevOps CI/CD Demo Application</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <span class="logo">&#9881; DevOps Lab</span>
+      <nav>
+        <a href="/health" target="_blank">/health</a>
+        <a href="/api/info" target="_blank">/api/info</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>DevOps CI/CD Demo Application</h1>
+      <p class="welcome">
+        Welcome! This application is built to practice DevOps workflows:
+        version control, automated testing, CI/CD pipelines, and cloud deployment.
+      </p>
+      <div class="status-badge" id="status-badge">
+        <span class="dot"></span>
+        <span id="status-text">Running Successfully</span>
+      </div>
+    </section>
+
+    <section class="cards">
+      <article class="card">
+        <h2>Server Information</h2>
+        <ul class="info-list" id="server-info">
+          <li><span>Hostname</span><strong id="info-hostname">loading...</strong></li>
+          <li><span>Environment</span><strong id="info-environment">loading...</strong></li>
+          <li><span>Node.js Version</span><strong id="info-node">loading...</strong></li>
+          <li><span>Platform</span><strong id="info-platform">loading...</strong></li>
+          <li><span>App Version</span><strong id="info-version">loading...</strong></li>
+          <li><span>Uptime</span><strong id="info-uptime">loading...</strong></li>
+          <li><span>Server Time</span><strong id="info-time">loading...</strong></li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>API Endpoints</h2>
+        <ul class="endpoint-list">
+          <li><code>GET /</code><span>Homepage</span></li>
+          <li><code>GET /health</code><span>Health status (JSON)</span></li>
+          <li><code>GET /api/info</code><span>App &amp; environment info (JSON)</span></li>
+        </ul>
+        <h2 class="mt">CI/CD Pipeline</h2>
+        <ol class="pipeline">
+          <li>Code</li>
+          <li>Build</li>
+          <li>Test</li>
+          <li>Deploy</li>
+        </ol>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">DevOps CI/CD Demo Application &middot; Node.js + Express</div>
+  </footer>
+
+  <script src="/script.js"></script>
+</body>
+</html>

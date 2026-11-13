@@ -1,0 +1,28 @@
+{
+  "name": "devops-cicd-demo",
+  "version": "1.0.0",
+  "description": "DevOps CI/CD Demo Application - a simple Express.js app for practicing DevOps and CI/CD",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "jest --verbose",
+    "test:coverage": "jest --coverage"
+  },
+  "keywords": ["devops", "ci-cd", "nodejs", "express"],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^7.1.0"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
